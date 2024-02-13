@@ -1204,7 +1204,7 @@ button {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .margin-top {
@@ -4074,6 +4074,11 @@ button {
 
 .box .resalt-search__top-box {
   margin: 0 0 30px 0;
+}
+
+.box__right {
+  max-width: 800px;
+  width: 100%;
 }
 
 .box .offers__filter-type {

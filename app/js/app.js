@@ -109,6 +109,11 @@ $(function () {
     minimumResultsForSearch: -1
   });
 
+  $(".type-second").select2({
+    placeholder: "Сортування",
+    minimumResultsForSearch: -1
+  });
+
   $(".city").select2({
     // placeholder: "Сортування",
     minimumResultsForSearch: -1
