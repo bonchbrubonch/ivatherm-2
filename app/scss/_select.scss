@@ -1,0 +1,96 @@
+.select {
+  .select2-container--default .select2-selection--single {
+    border-radius: 40px !important;
+    border: 1px solid #8D89DA;
+    height: 40px;
+
+  }
+
+  .select2-results__option {
+    color: #8D89DA !important;
+  }
+
+  .select2-container {
+    width: 100% !important;
+
+  }
+
+  .select2-selection__rendered {
+    height: 40px;
+
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 50%;
+    transform: translateY(-50%);
+
+  }
+
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 25px;
+    padding-right: 43px;
+    line-height: 40px;
+    color: #8D89DA;
+    font-weight: 400 !important;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/dest/icons/arrow-select.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 15px;
+
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border: none;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #8D89DA;
+    font-weight: 400 !important;
+  }
+}
+
+.select2-results__option {
+  padding: 7px 8px;
+}
+
+.select2-dropdown {
+  top: 6px;
+  border-radius: 8px !important;
+  background-color: #fff !important;
+  overflow: hidden !important;
+}
+.select2-dropdown.select2-dropdown--below{
+  border: 1px solid #8D89DA;
+}
+.select2-container--default .select2-results__option--selected {
+  background-color: #8D89DA;
+  color: #fff;
+  pointer-events: none;
+}
+
+.select2-results__option--selectable {
+  text-align: center;
+  color: #4E4E4E;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 19px;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #E8E7F7;
+  color: #4E4E4E;
+  font-weight: 400 !important;
+}
+
+.select .select2-container.select2-container--open{
+  .select2-selection__arrow{
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
