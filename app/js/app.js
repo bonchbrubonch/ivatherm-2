@@ -109,10 +109,10 @@ $(function () {
     minimumResultsForSearch: -1
   });
 
-  $(".type-second").select2({
-    placeholder: "Сортування",
-    minimumResultsForSearch: -1
-  });
+  // $(".type-second").select2({
+  //   placeholder: "Сортування",
+  //   minimumResultsForSearch: -1
+  // });
 
   $(".city").select2({
     // placeholder: "Сортування",
@@ -485,3 +485,40 @@ var swiper = new Swiper(".slider-modal", {
   }
 
 });
+
+
+  // Отримуємо всі елементи з класом "input-wrap"
+  var inputWraps = document.querySelectorAll('.input-wrap-three');
+
+  // Перебираємо кожен елемент
+  inputWraps.forEach(function (inputWrap) {
+      // Знаходимо елементи "plus" і "minus" всередині поточного "input-wrap"
+      var plusButtonTwo = inputWrap.querySelector('.input-wrap__plus-three');
+      var minusButtonTwo = inputWrap.querySelector('.input-wrap__minus-three');
+      var inputFieldTwo = inputWrap.querySelector('input');
+
+      // Додаємо обробник події для кнопки "plus"
+      plusButtonTwo.addEventListener('click', function () {
+          // Збільшуємо значення input на 1
+          inputFieldTwo.value = parseInt(inputFieldTwo.value, 10) + 1;
+          updateWsum();
+      });
+
+      // Додаємо обробник події для кнопки "minus"
+      minusButtonTwo.addEventListener('click', function () {
+          // Зменшуємо значення input на 1, але не менше 0
+          inputFieldTwo.value = Math.max(parseInt(inputFieldTwo.value, 10) - 1, 0);
+          updateWsum();
+      });
+
+      // Додаємо обробник події для зміни значення input
+      inputFieldTwo.addEventListener('input', function () {
+          updateWsum();
+      });
+
+      // Функція для оновлення значення елемента з класом "wsum"
+      function updateWsum() {
+          var inputValue = parseInt(inputFieldTwo.value, 10);
+          document.querySelector('.wsum-three').textContent = inputValue * 1000;
+      }
+  });
