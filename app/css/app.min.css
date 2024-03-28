@@ -6934,7 +6934,7 @@ button {
     bottom: 0;
     overflow: auto;
     background: #fff;
-    height: 100vh;
+    height: 100svh;
   }
   .menu .container {
     height: 100%;
